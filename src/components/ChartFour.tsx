@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import ReactApexChart from 'react-apexcharts'
+import React, { Component } from 'react';
+import ReactApexChart from 'react-apexcharts';
 
 class ChartFour extends Component {
   constructor(props: any) {
-    super(props)
+    super(props);
 
     this.state = {
       series: [
@@ -110,37 +110,37 @@ class ChartFour extends Component {
             show: false,
           },
           y: {
-            formatter: function (val: any) {
-              return val
+            formatter(val: any) {
+              return val;
             },
           },
         },
       },
-    }
+    };
   }
 
   render() {
     return (
-      <div className='col-span-12 rounded-sm border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5'>
+      <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5">
         <div>
-          <h3 className='text-xl font-semibold text-black dark:text-white'>
+          <h3 className="text-xl font-semibold text-black dark:text-white">
             Visitors Analytics
           </h3>
         </div>
 
-        <div className='mb-2'>
-          <div id='chartFour' className='-ml-5'>
+        <div className="mb-2">
+          <div id="chartFour" className="-ml-5">
             <ReactApexChart
               options={this.state.options}
               series={this.state.series}
-              type='bar'
+              type="bar"
               height={350}
             />
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default ChartFour
+export default ChartFour;

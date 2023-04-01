@@ -1,0 +1,83 @@
+//for enabling the rule. 0=off, 1=warn, 2=error. Defaults to 0.
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:react-hooks/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "react-hooks"],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [2, "unix"],
+    "quotes": [2, "single"],
+    "semi": [2, "always"],
+    "curly": [2, "all"],
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
+    "eqeqeq": "off",
+    "new-cap": 2,
+    "no-case-declarations": 0,
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "no-underscore-dangle": "off",
+    "no-console": "off",
+    "import/no-unresolved": "off",
+    "no-use-before-define": "off",
+    "no-unused-vars": "off", //warn
+    "import/extensions": "off",
+    "max-len": "off",
+    "class-methods-use-this": "off", // Method not arrow function
+    "no-useless-escape": "off",
+    "no-shadow": "off",
+    "max-classes-per-file": "off", // Max 2 class
+    "import/no-mutable-exports": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "no-unused-expressions": "off",
+    "no-nested-ternary": "off",
+    "camelcase": "off",
+    "no-restricted-syntax": "off",
+    "react/destructuring-assignment": "off",
+    "arrow-parens": "off",
+    "react/state-in-constructor": [0, "never"],
+    "react/no-unused-prop-types": [0, "ignore"],
+    "react/require-default-props": [0],
+    "react/prop-types": [0],
+    "prefer-destructuring": [
+      "error",
+      {
+        "array": false,
+        "object": true
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "no-lonely-if": "off",
+    "react/jsx-props-no-spreading": "off",
+    "no-param-reassign": "off",
+    "react-hooks/exhaustive-deps": [
+      "warn",
+      {
+        "additionalHooks": "(useFrameProcessor)"
+      }
+    ]
+  }
+}
