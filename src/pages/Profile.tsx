@@ -4,6 +4,7 @@ import Breadcrumb from '../components/Breadcrumb.jsx';
 import CoverOne from '../images/cover/cover-01.png';
 import userSix from '../images/user/user-06.png';
 
+// @ts-ignore
 const Profile = () => (
   <DefaultLayout>
     <Breadcrumb pageName="Profile" />
